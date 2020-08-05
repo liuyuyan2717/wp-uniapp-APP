@@ -1,0 +1,68 @@
+{	
+	 "easycom": {
+	        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	    },
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "博客文章",
+				"enablePullDownRefresh":true
+			}
+		},
+		{
+            "path" : "pages/user/user",
+            "style" : {
+				"navigationBarTitleText":"个人中心"
+			}
+        }
+        ,{
+            "path" : "pages/blog/blog",
+            "style" : {
+				"navigationBarTitleText":"文章详情"
+			}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText":"搜索结果"
+			}
+        }
+        ,{
+            "path" : "pages/music/music",
+            "style" : {
+				"navigationBarTitleText": "音乐播放器"
+			}
+        }
+    ],
+	"tabBar":{
+		"color":"#C0C0C0",
+		"selectedColor":"#0055ff",
+		"list":[
+			{
+				"text":"首页",
+				"iconPath":"static/icon/11.png",
+				"selectedIconPath":"static/icon/11_act.png",
+				"pagePath":"pages/index/index"
+			},
+			{
+				"text":"音乐",
+				"iconPath":"static/icon/f1.png",
+				"selectedIconPath":"static/icon/f2.png",
+				"pagePath":"pages/music/music"
+			},
+			{
+				"text":"我的",
+				"iconPath":"static/icon/e1.png",
+				"selectedIconPath":"static/icon/e2.png",
+				"pagePath":"pages/user/user"
+			}
+			]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#0055ff",
+		"backgroundColor": "#F8F8F8"
+	}
+}
